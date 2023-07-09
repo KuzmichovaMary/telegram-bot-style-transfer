@@ -1,5 +1,4 @@
 # Что это за проект
----
 
 Telegram Bot для перенесения стиля с одной картинки на другую [magents arbitrary style transfer](https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2), а также для стилизации картинки в соответствии с выбранным стилем [fast style transfer](https://github.com/lengstrom/fast-style-transfer).
 С помощью бота можно сделать катринку мультяшной с помощью [CartoonGan](https://tfhub.dev/sayakpaul/lite-model/cartoongan/dr/1).
@@ -8,10 +7,7 @@ Telegram Bot для перенесения стиля с одной картин
 
 # Установка
 
----
-
 ## Тестирование и локальный запуск
----
 
 Необходим [питон версии 3.10>=](https://www.python.org/downloads/).
 
@@ -24,8 +20,6 @@ Telegram Bot для перенесения стиля с одной картин
 6. Запустить ```poetry run python3 app.py```
 
 ## Запуск на сервере
-
----
 
 Для работы необходим установленный докер ([как установить](https://docs.docker.com/engine/install/)) и [питон 3.10>=](https://www.python.org/downloads/).
 
