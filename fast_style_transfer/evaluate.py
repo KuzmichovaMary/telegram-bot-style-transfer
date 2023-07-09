@@ -7,7 +7,7 @@ import scipy.misc
 import tensorflow as tf
 
 from fast_style_transfer.utils import save_img, get_img, exists, list_files
-import fast_style_transfer.transform
+import fast_style_transfer.transform as transform
 
 BATCH_SIZE = 4
 DEVICE = '/gpu:0'

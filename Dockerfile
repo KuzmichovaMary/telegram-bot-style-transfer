@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
-RUN apt-get update && apt-get install -y \
-curl
+RUN apt-get update && apt-get install curl -y
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 RUN curl -sSL https://install.python-poetry.org | python -
 
 WORKDIR /dls-project/
