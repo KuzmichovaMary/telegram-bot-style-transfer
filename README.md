@@ -28,4 +28,29 @@ Telegram Bot для перенесения стиля с одной картин
 3. Собрать докер-образ ```docker build -t telegram-bot-style-transfer --build-arg BOT_TOKEN=<YOUR TOKEN> .```
 4. Запустить докер-образ ```docker run --name style-transfer -it telegram-bot-style-transfer```
 
+# Скриншоты
+
+### Стартовый диалог бота
+
+![img](screenshots/start.png)
+
+### Использование хендлера /transfer_style
+
+![img](screenshots/transfer_style_1.png)
+![img](screenshots/style_image.png)
+![img](screenshots/result.png)
+
+### Вызов хендлера /details
+
+![img](screenshots/details.png)
+
+### Применение различных стилей к фотографии
+
+![initial](screenshots/wolfie.jpg)
+![udnie](screenshots/wolfie_udnie.jpg)
+![la muse](screenshots/wolfie_la_muse.jpg)
+![scream](screenshots/wolfie_scream.jpg)
+![wreck](screenshots/wolfie_wreck.jpg)
+![rain princess](screenshots/wolfie_rain_princess.jpg)
+
 
