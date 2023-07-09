@@ -1,12 +1,20 @@
-FROM ubuntu:22.04
+FROM python:3.10-slim
+
+RUN apt-get update && apt-get install -y \
+curl
+RUN curl -sSL https://install.python-poetry.org | python -
+
+ADD poetry.lock pyproject.toml ./
+
+ENV PATH="/root/.local/bin:$PATH"
+RUN poetry config virtualenvs.create false
+RUN poetry install --no-root
+RUN poetry show
 
 COPY . ./
 
-RUN curl -sSL https://install.python-poetry.org | python3 -
 
 ARG BOT_TOKEN
 ENV TG_BOT_TOKEN=$BOT_TOKEN
-
-RUN poetry install
 
 CMD ["poetry", "run", "python3", "bot.py"]
